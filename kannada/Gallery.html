@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+   
+    <title>Scorpion-Informer</title>
+    <link rel="stylesheet" href="steak/css/style.css">
+      
+      
+      
+      
+      
+      
+      
+      
+    <!-- Page Title -->
+    <title>Scorpion Informer</title>
+ <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.1/css/all.css'>
+   <link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
+    <!-- Favicon -->
+     <meta name="theme-color" content="black">
+    <meta name="msapplication-navbutton-color" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="1.jpg" type="" />
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/index/css/animate-3.7.0.css">
+    <link rel="stylesheet" href="assets/index/css/font-awesome-4.7.0.min.css">
+    <link rel="stylesheet" href="assets/index/css/bootstrap-4.1.3.min.css">
+    <link rel="stylesheet" href="assets/index/css/owl-carousel.min.css">
+    <link rel="stylesheet" href="assets/index/css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="assets/index/css/style.css">
+      
+      
+      
+      
+  </head>
+    <style>
+       
+/*social share button*/
+.menu-item,
+.menu-open-button {
+  background: #e8491d;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  position: absolute;
+  color: #FFFFFF;
+  
+  text-align: center;
+  line-height: 84px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform ease-out 200ms;
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+.menu-open {
+  display: none;
+}
+
+.menuShare {
+  margin: auto;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  width: 100px;
+  height:100px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 26px;
+  z-index: 99;
+}
+
+.menuShare a.menu-item .fa{
+  color: #fff;
+}
+
+.share-icon{
+  color: #fff;
+}
+
+.menu-item:hover {
+  opacity: 1;
+}
+
+.menu-item:nth-child(3) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(4) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(5) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(6) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-open-button {
+  z-index: 2;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+  -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+.menu-open-button:hover {
+  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+  transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.menu-open:checked ~ .menu-item {
+  -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+  transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(3) {
+  transition-duration: 180ms;
+  -webkit-transition-duration: 180ms;
+  -webkit-transform: translate3d(0.08361px, -84.99997px, 0);
+  transform: translate3d(0.08361px, -84.99997px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(4) {
+  transition-duration: 280ms;
+  -webkit-transition-duration: 280ms;
+  -webkit-transform: translate3d(0.08361px, -174.99997px, 0);
+  transform: translate3d(0.08361px, -174.99997px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(5) {
+  transition-duration: 380ms;
+  -webkit-transition-duration: 380ms;
+  -webkit-transform: translate3d(0.08361px, -262.99997px, 0);
+  transform: translate3d(0.08361px, -262.99997px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(6) {
+  transition-duration: 380ms;
+  -webkit-transition-duration: 380ms;
+  -webkit-transform: translate3d(0.08361px, -350.99997px, 0);
+  transform: translate3d(0.08361px, -350.99997px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(7) {
+  transition-duration: 480ms;
+  -webkit-transition-duration: 480ms;
+  -webkit-transform: translate3d(0.08361px, -440.99997px, 0);
+  transform: translate3d(0.08361px, -440.99997px, 0);
+}
+
+.facebook_share_btn {
+  background-color: #3b5998;
+}
+
+.facebook_share_btn:hover {
+  color: #3b5998;
+  text-shadow: none;
+}
+
+.twitter_share_btn {
+  background-color: #00aced;
+}
+
+.twitter_share_btn:hover {
+  color: #00aced;
+  text-shadow: none;
+}
+
+.google_plus_share_btn {
+  background-color: #dd4b39;
+}
+
+.google_plus_share_btn:hover {
+  color: #dd4b39;
+  text-shadow: none;
+}
+.whatsapp_share_btn {
+  background-color: green;
+}
+
+.whatsapp_share_btn:hover {
+  color: green;
+  text-shadow: none;
+}
+.linkedin_share_btn {
+  background-color: #00aced;
+}
+
+.linkedin_share_btn:hover {
+  color: #00aced;
+  text-shadow: none;
+}
+
+/*end social share button*/
+
+
+    
+   
+.navbar-custom{
+background-color: #151717;
+	color: #FFF;
+	border-radius: 0px;
+	padding: 10px;
+}
+.navbar-custom .navbar-nav>li>a{
+	color: #FFF;font-family: Times new roman;
+	font-size: 21px;margin-left: 13px;
+}
+.navbar-custom .navbar-nav>.active>a{
+	color: #fff;background-color: #df6c43;
+}
+.navbar-custom .navbar-nav>li>a:hover{
+	background-color: #df6c43;
+}
+.navbar-custom .navbar-brand{
+color: #fff;font-size: 27px;margin-left: 15px;
+}
+.navbar-custom .navbar-brand:hover{
+color: #fff;font-size: 27px;
+    }
+.navbar-custom{
+background-color: #151717;
+	color: #FFF;
+	border-radius: 0px;
+	padding: 10px;
+}
+.navbar-custom .navbar-nav>li>a{
+	color: #FFF;
+	font-size: 19px;margin-left: 13px;
+}
+.navbar-custom .navbar-nav>.active>a{
+	color: #fff;background-color: #df6c43;
+}
+.navbar-custom .navbar-nav>li>a:hover{
+	background-color: #df6c43;
+}
+.navbar-custom .navbar-brand{
+color: #fff;font-size: 27px;margin-left: 15px;
+}
+.navbar-custom .navbar-brand:hover{
+color: #fff;font-size: 27px;
+    }
+     
+#container ul1{
+list-style:none;
+}
+#container ul1 li1{
+background-color:cadetblue;
+width:150px;
+text-decoration: none;
+height:50px;
+line-height:50px;
+text-align:center;
+float:left;
+color:white;
+font-size:20px;font-family: Times new roman;
+position:relative;
+}
+#container ul1 li1:hover{
+background-color:#df6c43;
+}
+#container ul1 ul1{
+display:none;
+}
+#container ul1 li1:hover > ul1{
+display:block;
+}
+#container ul1 ul1 ul1{
+margin-left:150px;
+top:0px;
+posiyion:absolute;
+}
+    #container ui1 a {
+        text-decoration: none;
+    }   
+   
+
+
+    
+    </style>
+  <body>
+
+  <div class="js-animsition animsition" id="site-wrap" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
+    
+   
+      
+      
+      
+      
+      
+      
+      
+       <section class="banner-area text-center">
+        
+            
+                <div class="col-lg-12">  <a href="index.html" class="template-btn mt-3">HOME</a>
+                     <a href="Gallery.html" class="template-btn mt-3">GALLERY</a>
+                    <a href="About-Us.html" class="template-btn mt-3">ABOUT US</a>
+                     <a href="Contact-Us.html" class="template-btn mt-3">CONTACT US</a>
+                    <a href="enquiry.html" class="template-btn mt-3">ENQUIRY</a>
+                    
+                    <br> <br>
+                    
+                    <h6>You create good tomorrow by better today.</h6>
+                    <h1> <span class="prime-color">"February </span>  
+                    <span class="style-change"> <span class="prime-color"> </span>Details"</span></h1>
+                   
+                </div>
+          
+    </section>
+      
+      
+      
+      
+      
+    
+
+    <div class="templateux-section" id="next-section">
+      
+        <div id="gallery-content-center" class="grid">
+
+          <a href="img2/F1.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #1" data-fancybox="gallery">
+            <img src="img2/F1.jpg" alt="">
+          </a>
+          <a href="img2/F80.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #2" data-fancybox="gallery">
+            <img src="img2/F80.jpg" alt="">
+          </a>
+          <a href="img2/F3.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #3" data-fancybox="gallery">
+            <img src="img2/F3.jpg" alt="">
+          </a>
+          <a href="img2/F4.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #4" data-fancybox="gallery">
+            <img src="img2/F4.jpg" alt="">
+          </a>
+          <a href="img2/F5.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #5" data-fancybox="gallery">
+            <img src="img2/F5.jpg" alt="">
+          </a>
+          <a href="img2/F6.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #6" data-fancybox="gallery">
+            <img src="img2/F6.jpg" alt="">
+          </a>
+          <a href="img2/F7.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #7" data-fancybox="gallery">
+            <img src="img2/F7.jpg" alt="">
+          </a>
+         
+        
+          <a href="img2/F9.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #10" data-fancybox="gallery">
+            <img src="img2/F9.jpg" alt="">
+          </a>
+          <a href="img2/F10.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #11" data-fancybox="gallery">
+            <img src="img2/F10.jpg" alt="">
+          </a>
+          <a href="img2/F11.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #12" data-fancybox="gallery">
+            <img src="img2/F11.jpg" alt="">
+          </a>
+          <a href="img2/F11-A.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
+            <img src="img2/F11-A.jpg" alt="">
+          </a>
+
+            
+           
+            
+            
+            
+             <a href="img2/F11-B.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #1" data-fancybox="gallery">
+            <img src="img2/F11-B.jpg" alt="">
+          </a>
+          <a href="img2/F12.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #2" data-fancybox="gallery">
+            <img src="img2/F12.jpg" alt="">
+          </a>
+          <a href="img2/F13.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #3" data-fancybox="gallery">
+            <img src="img2/F13.jpg" alt="">
+          </a>
+          <a href="img2/F14.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #4" data-fancybox="gallery">
+            <img src="img2/F14.jpg" alt="">
+          </a>
+          <a href="img2/F15.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #5" data-fancybox="gallery">
+            <img src="img2/F15.jpg" alt="">
+          </a>
+          <a href="img2/F16.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #6" data-fancybox="gallery">
+            <img src="img2/F16.jpg" alt="">
+          </a>
+          <a href="img2/F17.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #7" data-fancybox="gallery">
+            <img src="img2/F17.jpg" alt="">
+          </a>
+          <a href="img2/F18.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #8" data-fancybox="gallery">
+            <img src="img2/F18.jpg" alt="">
+          </a>
+          <a href="img2/F19.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #9" data-fancybox="gallery">
+            <img src="img2/F19.jpg" alt="">
+          </a>
+          <a href="img2/F20.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #10" data-fancybox="gallery">
+            <img src="img2/F20.jpg" alt="">
+          </a>
+          <a href="img2/F21.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #11" data-fancybox="gallery">
+            <img src="img2/F21.jpg" alt="">
+          </a>
+          <a href="img2/F22.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #12" data-fancybox="gallery">
+            <img src="img2/F22.jpg" alt="">
+          </a>
+          <a href="img2/F23.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
+            <img src="img2/F23.jpg" alt="">
+          </a>
+
+             
+            
+            
+             <a href="img2/F24.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #1" data-fancybox="gallery">
+            <img src="img2/F24.jpg" alt="">
+          </a>
+          <a href="img2/F25.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #2" data-fancybox="gallery">
+            <img src="img2/F25.jpg" alt="">
+          </a>
+          <a href="img2/F26.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #3" data-fancybox="gallery">
+            <img src="img2/F26.jpg" alt="">
+          </a>
+          <a href="img2/F27.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #4" data-fancybox="gallery">
+            <img src="img2/F27.jpg" alt="">
+          </a>
+          <a href="img2/F28.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #5" data-fancybox="gallery">
+            <img src="img2/F28.jpg" alt="">
+          </a>
+          <a href="img2/F29.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #6" data-fancybox="gallery">
+            <img src="img2/F29.jpg" alt="">
+          </a>
+          <a href="img2/F30.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #7" data-fancybox="gallery">
+            <img src="img2/F30.jpg" alt="">
+          </a>
+          <a href="img2/F31.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #8" data-fancybox="gallery">
+            <img src="img2/F31.jpg" alt="">
+          </a>
+          <a href="img2/F32.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #9" data-fancybox="gallery">
+            <img src="img2/F32.jpg" alt="">
+          </a>
+          <a href="img2/F33.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #10" data-fancybox="gallery">
+            <img src="img2/F33.jpg" alt="">
+          </a>
+          <a href="img2/F34.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #11" data-fancybox="gallery">
+            <img src="img2/F34.jpg" alt="">
+          </a>
+          <a href="img2/F35.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #12" data-fancybox="gallery">
+            <img src="img2/F35.jpg" alt="">
+          </a>
+          <a href="img2/F36.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
+            <img src="img2/F36.jpg" alt="">
+          </a>
+
+             
+            
+            
+            
+             <a href="img2/F37.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #1" data-fancybox="gallery">
+            <img src="img2/F37.jpg" alt="">
+          </a>
+          <a href="img2/F38.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #2" data-fancybox="gallery">
+            <img src="img2/F38.jpg" alt="">
+          </a>
+          <a href="img2/F39.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #3" data-fancybox="gallery">
+            <img src="img2/F39.jpg" alt="">
+          </a>
+          <a href="img2/F40.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #4" data-fancybox="gallery">
+            <img src="img2/F40.jpg" alt="">
+          </a>
+          <a href="img2/F41.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #5" data-fancybox="gallery">
+            <img src="img2/F41.jpg" alt="">
+          </a>
+          <a href="img2/F42.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #6" data-fancybox="gallery">
+            <img src="img2/F42.jpg" alt="">
+          </a>
+          <a href="img2/F43.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #7" data-fancybox="gallery">
+            <img src="img2/F43.jpg" alt="">
+          </a>
+          <a href="img2/F44.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #8" data-fancybox="gallery">
+            <img src="img2/F44.jpg" alt="">
+          </a>
+          <a href="img2/F44-A.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #9" data-fancybox="gallery">
+            <img src="img2/F44-A.jpg" alt="">
+          </a>
+          <a href="img2/F44-B.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #10" data-fancybox="gallery">
+            <img src="img2/F44-B.jpg" alt="">
+          </a>
+          <a href="img2/F44-C.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #11" data-fancybox="gallery">
+            <img src="img2/F44-C.jpg" alt="">
+          </a>
+          <a href="img2/F44-D.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #12" data-fancybox="gallery">
+            <img src="img2/F44-D.jpg" alt="">
+          </a>
+          <a href="img2/F44-E.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
+            <img src="img2/F44-E.jpg" alt="">
+          </a>
+
+            
+            
+            
+            
+             <a href="img2/F44-F.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #1" data-fancybox="gallery">
+            <img src="img2/F44-F.jpg" alt="">
+          </a>
+          <a href="img2/F45.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #2" data-fancybox="gallery">
+            <img src="img2/F45.jpg" alt="">
+          </a>
+          <a href="img2/F46.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #3" data-fancybox="gallery">
+            <img src="img2/F46.jpg" alt="">
+          </a>
+          <a href="img2/F47.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #4" data-fancybox="gallery">
+            <img src="img2/F47.jpg" alt="">
+          </a>
+          <a href="img2/F48.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #5" data-fancybox="gallery">
+            <img src="img2/F48.jpg" alt="">
+          </a>
+          <a href="img2/F49.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #6" data-fancybox="gallery">
+            <img src="img2/F49.jpg" alt="">
+          </a>
+          <a href="img2/F50.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #7" data-fancybox="gallery">
+            <img src="img2/F50.jpg" alt="">
+          </a>
+          <a href="img2/F51.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #8" data-fancybox="gallery">
+            <img src="img2/F51.jpg" alt="">
+          </a>
+          <a href="img2/F52.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #9" data-fancybox="gallery">
+            <img src="img2/F52.jpg" alt="">
+          </a>
+          <a href="img2/F53.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #10" data-fancybox="gallery">
+            <img src="img2/F53.jpg" alt="">
+          </a>
+          <a href="img2/F54.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #11" data-fancybox="gallery">
+            <img src="img2/F54.jpg" alt="">
+          </a>
+          <a href="img2/F55.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #12" data-fancybox="gallery">
+            <img src="img2/F55.jpg" alt="">
+          </a>
+          <a href="img2/F56.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
+            <img src="img2/F56.jpg" alt="">
+          </a>
+
+            
+             
+            
+            
+             <a href="img2/F57.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #1" data-fancybox="gallery">
+            <img src="img2/F57.jpg" alt="">
+          </a>
+          <a href="img2/F58.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #2" data-fancybox="gallery">
+            <img src="img2/F58.jpg" alt="">
+          </a>
+          <a href="img2/F59.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #3" data-fancybox="gallery">
+            <img src="img2/F59.jpg" alt="">
+          </a>
+          <a href="img2/F60.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #4" data-fancybox="gallery">
+            <img src="img2/F60.jpg" alt="">
+          </a>
+          <a href="img2/F61.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #5" data-fancybox="gallery">
+            <img src="img2/F61.jpg" alt="">
+          </a>
+          <a href="img2/F62.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #6" data-fancybox="gallery">
+            <img src="img2/F62.jpg" alt="">
+          </a>
+          <a href="img2/F63.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #7" data-fancybox="gallery">
+            <img src="img2/F63.jpg" alt="">
+          </a>
+          <a href="img2/F64.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #8" data-fancybox="gallery">
+            <img src="img2/F64.jpg" alt="">
+          </a>
+          <a href="img2/F65.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #9" data-fancybox="gallery">
+            <img src="img2/F65.jpg" alt="">
+          </a>
+          <a href="img2/F66.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #10" data-fancybox="gallery">
+            <img src="img2/F66.jpg" alt="">
+          </a>
+          <a href="img2/F67.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #11" data-fancybox="gallery">
+            <img src="img2/F67.jpg" alt="">
+          </a>
+          <a href="img2/F68.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #12" data-fancybox="gallery">
+            <img src="img2/F68.jpg" alt="">
+          </a>
+          <a href="img2/F68-A.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
+            <img src="img2/F68-A.jpg" alt="">
+          </a>
+
+            
+            
+            
+            
+              <a href="img2/F68-B.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #1" data-fancybox="gallery">
+            <img src="img2/F68-B.jpg" alt="">
+          </a>
+          <a href="img2/F68-C.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #2" data-fancybox="gallery">
+            <img src="img2/F68-C.jpg" alt="">
+          </a>
+          <a href="img2/F68-D.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #3" data-fancybox="gallery">
+            <img src="img2/F68-D.jpg" alt="">
+          </a>
+          <a href="img2/F68-E.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #4" data-fancybox="gallery">
+            <img src="img2/F68-E.jpg" alt="">
+          </a>
+          <a href="img2/F69.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #5" data-fancybox="gallery">
+            <img src="img2/F69.jpg" alt="">
+          </a>
+          <a href="img2/F70.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #6" data-fancybox="gallery">
+            <img src="img2/F70.jpg" alt="">
+          </a>
+          <a href="img2/F71.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #7" data-fancybox="gallery">
+            <img src="img2/F71.jpg" alt="">
+          </a>
+          <a href="img2/F72.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #8" data-fancybox="gallery">
+            <img src="img2/F72.jpg" alt="">
+          </a>
+         
+          <a href="img2/F74.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #10" data-fancybox="gallery">
+            <img src="img2/F74.jpg" alt="">
+          </a>
+        
+          <a href="img2/F76.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #12" data-fancybox="gallery">
+            <img src="img2/F76.jpg" alt="">
+          </a>
+          <a href="img2/F77.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
+            <img src="img2/F77.jpg" alt="">
+          </a>
+
+            
+             
+            
+            
+            
+              <a href="img2/F78.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #1" data-fancybox="gallery">
+            <img src="img2/F78.jpg" alt="">
+          </a>
+          <a href="img2/F79.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #2" data-fancybox="gallery">
+            <img src="img2/F79.jpg" alt="">
+          </a>
+          <a href="img2/F80.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #3" data-fancybox="gallery">
+            <img src="img2/F80.jpg" alt="">
+          </a>
+          <a href="img2/F81.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #4" data-fancybox="gallery">
+            <img src="img2/F81.jpg" alt="">
+          </a>
+          <a href="img2/F82.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #5" data-fancybox="gallery">
+            <img src="img2/F82.jpg" alt="">
+          </a>
+          <a href="img2/F83.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #6" data-fancybox="gallery">
+            <img src="img2/F83.jpg" alt="">
+          </a>
+          <a href="img2/F84.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #7" data-fancybox="gallery">
+            <img src="img2/F84.jpg" alt="">
+          </a>
+          <a href="img2/F85.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #8" data-fancybox="gallery">
+            <img src="img2/F85.jpg" alt="">
+          </a>
+          <a href="img2/F86.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #9" data-fancybox="gallery">
+            <img src="img2/F86.jpg" alt="">
+          </a>
+          <a href="img2/F87.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #10" data-fancybox="gallery">
+            <img src="img2/F87.jpg" alt="">
+          </a>
+          <a href="img2/F88.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #11" data-fancybox="gallery">
+            <img src="img2/F88.jpg" alt="">
+          </a>
+          <a href="img2/F89.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #12" data-fancybox="gallery">
+            <img src="img2/F89.jpg" alt="">
+          </a>
+          <a href="img2/F90.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
+            <img src="img2/F90.jpg" alt="">
+          </a>
+
+            
+            
+             
+            
+            
+            
+            
+              <a href="img2/F91.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #1" data-fancybox="gallery">
+            <img src="img2/F91.jpg" alt="">
+          </a>
+          <a href="img2/F92.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #2" data-fancybox="gallery">
+            <img src="img2/F92.jpg" alt="">
+          </a>
+          <a href="img2/F93.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #3" data-fancybox="gallery">
+            <img src="img2/F93.jpg" alt="">
+          </a>
+          <a href="img2/F94.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #4" data-fancybox="gallery">
+            <img src="img2/F94.jpg" alt="">
+          </a>
+          <a href="img2/F95.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #5" data-fancybox="gallery">
+            <img src="img2/F95.jpg" alt="">
+          </a>
+          <a href="img2/F96.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #6" data-fancybox="gallery">
+            <img src="img2/F96.jpg" alt="">
+          </a>
+          <a href="img2/F97.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #7" data-fancybox="gallery">
+            <img src="img2/F97.jpg" alt="">
+          </a>
+          <a href="img2/F98.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #8" data-fancybox="gallery">
+            <img src="img2/F98.jpg" alt="">
+          </a>
+          
+          <a href="img2/F100.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #10" data-fancybox="gallery">
+            <img src="img2/F100.jpg" alt="">
+          </a>
+          <a href="img2/F101.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #11" data-fancybox="gallery">
+            <img src="img2/F101.jpg" alt="">
+          </a>
+          <a href="img2/F102.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #12" data-fancybox="gallery">
+            <img src="img2/F102.jpg" alt="">
+          </a>
+          <a href="img2/F103.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
+            <img src="img2/F103.jpg" alt="">
+          </a>
+
+            
+            
+             
+            
+            
+            
+            
+              <a href="img2/F104.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #1" data-fancybox="gallery">
+            <img src="img2/F104.jpg" alt="">
+          </a>
+          <a href="img2/F105.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #2" data-fancybox="gallery">
+            <img src="img2/F105.jpg" alt="">
+          </a>
+          <a href="img2/F106.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #3" data-fancybox="gallery">
+            <img src="img2/F106.jpg" alt="">
+          </a>
+          <a href="img2/F107.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #4" data-fancybox="gallery">
+            <img src="img2/F107.jpg" alt="">
+          </a>
+          <a href="img2/F108.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #5" data-fancybox="gallery">
+            <img src="img2/F108.jpg" alt="">
+          </a>
+          <a href="img2/F109.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #6" data-fancybox="gallery">
+            <img src="img2/F109.jpg" alt="">
+          </a>
+          <a href="img2/F110.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #7" data-fancybox="gallery">
+            <img src="img2/F110.jpg" alt="">
+          </a>
+          <a href="img2/F111.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #8" data-fancybox="gallery">
+            <img src="img2/F111.jpg" alt="">
+          </a>
+          <a href="img2/F112.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #9" data-fancybox="gallery">
+            <img src="img2/F112.jpg" alt="">
+          </a>
+          <a href="img2/F113.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #10" data-fancybox="gallery">
+            <img src="img2/F113.jpg" alt="">
+          </a>
+          <a href="img2/F114.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #11" data-fancybox="gallery">
+            <img src="img2/F114.jpg" alt="">
+          </a>
+          <a href="img2/F115.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #12" data-fancybox="gallery">
+            <img src="img2/F115.jpg" alt="">
+          </a>
+          <a href="img2/F116.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
+            <img src="img2/F116.jpg" alt="">
+          </a>
+
+            
+            
+             
+            
+            
+            
+              <a href="img2/F117.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #1" data-fancybox="gallery">
+            <img src="img2/F117.jpg" alt="">
+          </a>
+          <a href="img2/F118.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #2" data-fancybox="gallery">
+            <img src="img2/F118.jpg" alt="">
+          </a>
+          <a href="img2/F119.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #3" data-fancybox="gallery">
+            <img src="img2/F119.jpg" alt="">
+          </a>
+          <a href="img2/F120.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #4" data-fancybox="gallery">
+            <img src="img2/F120.jpg" alt="">
+          </a>
+          <a href="img2/F121.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #5" data-fancybox="gallery">
+            <img src="img2/F121.jpg" alt="">
+          </a>
+          <a href="img2/F122.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #6" data-fancybox="gallery">
+            <img src="img2/F122.jpg" alt="">
+          </a>
+          <a href="img2/F123.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #7" data-fancybox="gallery">
+            <img src="img2/F123.jpg" alt="">
+          </a>
+          <a href="img2/F124.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #8" data-fancybox="gallery">
+            <img src="img2/F124.jpg" alt="">
+          </a>
+          <a href="img2/F125.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #9" data-fancybox="gallery">
+            <img src="img2/F125.jpg" alt="">
+          </a>
+          <a href="img2/F126.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #10" data-fancybox="gallery">
+            <img src="img2/F126.jpg" alt="">
+          </a>
+          <a href="img2/F127.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #11" data-fancybox="gallery">
+            <img src="img2/F127.jpg" alt="">
+          </a>
+          <a href="img2/F128.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #12" data-fancybox="gallery">
+            <img src="img2/F128.jpg" alt="">
+          </a>
+          <a href="img2/F129.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
+            <img src="img2/F129.jpg" alt="">
+          </a>
+
+            
+            
+            
+            
+            
+              <a href="img2/F130.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #1" data-fancybox="gallery">
+            <img src="img2/F130.jpg" alt="">
+          </a>
+          <a href="img2/F131.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #2" data-fancybox="gallery">
+            <img src="img2/F131.jpg" alt="">
+          </a>
+          <a href="img2/F132.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #3" data-fancybox="gallery">
+            <img src="img2/F132.jpg" alt="">
+          </a>
+          <a href="img2/F133.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #4" data-fancybox="gallery">
+            <img src="img2/F133.jpg" alt="">
+          </a>
+          <a href="img2/F134.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #5" data-fancybox="gallery">
+            <img src="img2/F134.jpg" alt="">
+          </a>
+         
+
+            
+            
+           
+            
+            
+        </div>
+      <p><a href="#" class="btn btn-black btn-outline-black py-2 px-4">Load More Photos....</a></p>
+        
+        
+        
+    </div>  <!-- .templateux-section -->
+  
+    
+    <!-- Table Area Starts -->
+    <section class="table-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-top2 text-center">
+                        <h4> 
+                          <span>To make our india developed nation one among, we have to develop rural areas and make them to take steps towards development. Which can be done by TDR..</span><br><br>  For the people, by the people. As the days go we just remember the paths of goodness. So it's time to memorize the TDR work in development..<br><br><span>  Many schemes of work sanctioned as road transpport facility and other developmental works to corresponding.</span></h4>
+                    </div>
+                </div>
+            </div>
+          
+               
+                   
+                     
+                        <div class="table-btn text-center">
+                            <a href="table.html" class="template-btn template-btn2 mt-4">Easy Browse Details...</a>
+                        </div>
+                    
+                </div>
+          
+        
+    </section>
+    <!-- Table Area End -->
+  
+	<nav class="menuShare">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open"><i class="fa fa-share-alt share-icon"></i></label>
+    <a class="menu-item twitter_share_btn" href="http://twitter.com/share?url=https://scorpioninformer123.github.io/T-D-R/">
+                    <i class="fab fa-twitter" aria-hidden="true"></i></a>
+    <a class="menu-item google_plus_share_btn" href="https://plus.google.com/share?url=https://scorpioninformer123.github.io/T-D-R/">
+                    <i class="fab fa-google" aria-hidden="true"></i></a>
+    <a class="menu-item whatsapp_share_btn" href="whatsapp://send?text=https://scorpioninformer123.github.io/T-D-R/">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+    <a class="menu-item facebook_share_btn" href="http://www.facebook.com/sharer.php?u=https://scorpioninformer123.github.io/T-D-R/">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+    <a class="menu-item linkedin_share_btn" href="http://www.linkedin.com/shareArticle?mini=true&url=https://scorpioninformer123.github.io/T-D-R/">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i></a>
+	</nav>
+   
+  <script src='js/menuShare.js'></script>
+
+  
+
+    <!-- Footer Area Starts -->
+    <footer class="footer-area">
+         
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                        <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed By : <a href="https://www.facebook.com/nithin.gowda.712?ref=br_rs">Nithin Gowda </a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="social-icons">
+                            <ul>
+                                <li class="no-margin">Follow Us</li>
+                                <li><a href="https://www.facebook.com/nithin.gowda.712?ref=br_rs"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/scorpioninform1"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://plus.google.com/116983735841213089569"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="https://www.instagram.com/scorpion_informer/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+  
+  <script src="steak/js/scripts-all.js"></script>
+  <script src="steak/js/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="steak/js/google-map.js"></script>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <!-- Javascript -->
+    <script src="assets/index/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="assets/index/js/vendor/bootstrap-4.1.3.min.js"></script>
+    <script src="assets/index/js/vendor/wow.min.js"></script>
+    <script src="assets/index/js/vendor/owl-carousel.min.js"></script>
+    <script src="assets/index/js/vendor/jquery.datetimepicker.full.min.js"></script>
+    <script src="assets/index/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="assets/index/js/main.js"></script>
+      
+      
+      
+  </body>
+</html>
