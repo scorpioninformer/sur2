@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+   
+    <!-- Page Title -->
+    <title>Scorpion Informer</title>
+ <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.1/css/all.css'>
+   <link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
+    <!-- Favicon -->
+     <meta name="theme-color" content="black">
+    <meta name="msapplication-navbutton-color" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="1.jpg" type="" />
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/index/css/animate-3.7.0.css">
+    <link rel="stylesheet" href="assets/index/css/font-awesome-4.7.0.min.css">
+    <link rel="stylesheet" href="assets/index/css/bootstrap-4.1.3.min.css">
+    <link rel="stylesheet" href="assets/index/css/owl-carousel.min.css">
+    <link rel="stylesheet" href="assets/index/css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="assets/index/css/style.css">
+<style>
+       
+    
+    
+header {
+	text-align: center;
+}
+.round-img {
+	border: 10px solid #dbdbdb;
+	border-radius: 50%;
+	margin: 15px auto;
+	-moz-box-shadow: 0 2px 4px rgba(104,104,104,0.8) inset;
+	-webkit-box-shadow: 0 2px 4px rgba(104,104,104,0.8) inset;
+	box-shadow: 0 2px 4px rgba(104,104,104,0.8) inset;
+}
+.round-img-lgb {
+	border: 10px solid #dbdbdb !important;
+  height:305px;
+  max-width:300px;
+  min-width:300px;
+}
+.round-img-lgb img{
+  display: inline;
+}
+
+/*  --- SECTIONS  --- */
+
+.center-container {
+	max-width: 1050px!important;
+	margin: 0 auto;
+}
+.center-content {
+	margin: 0 auto!important;
+	float: none!important;
+}
+section {
+	clear: both;
+	margin: 0px;
+	text-align: center;
+}
+section:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+}
+section p {
+	margin: 20px 0;
+}
+
+.names {
+	width: 100%;
+	text-align: center;
+	margin-top: 100px;
+	font-family: 'Great Vibes', cursive;
+	font-size: 84px;
+	color: #fff;
+	font-weight: 400;
+}
+.names-compact {
+	width: 100%;
+	text-align: center;
+	margin-top: 80px;
+	font-family: 'Great Vibes', cursive;
+	font-size: 70px;
+	color: #cb3438;
+	font-weight: 400;
+	background: url(../images/particles-small.png) center no-repeat;
+}
+.names-compact .fa {
+	font-size: 50px;
+	color: #cb3438;
+	display: none;
+}
+.names span {
+	color: #cb3438;
+}
+.name-1 {
+	padding-top: 80px;
+	text-align: right;
+}
+.name-2 {
+	padding-top: 80px;
+	text-align: left;
+}
+
+/* --- Wedding Date -- */
+
+.wedate {
+	text-align: center;
+	font-size: 16px;
+	color: #8a8a8a;
+	text-transform: uppercase;
+}
+.wedate i {
+	margin: 0 5px;
+}
+
+/* --- Main Images --- */
+
+.main-images {
+	position: relative;
+	margin-top: 30px !important;
+	width: 910px;
+	height: 360px;
+	background: url(../images/particles.png) center -10px no-repeat;
+	z-index: -99;
+}
+.main-images .couple:hover img {
+	background: #fff;
+	opacity: 0.8;
+	cursor: pointer;
+}
+.images {
+	width: 100%;
+}
+.image-01 {
+	position: absolute;
+	top: 70px;
+	left: -20px;
+	z-index: -99;
+}
+.image-02 {
+	position: absolute;
+	top: 110px;
+	left: 140px;
+	z-index: -49;
+}
+.image-04 {
+	position: absolute;
+	top: 110px;
+	left: 590px;
+	z-index: -49;
+}
+.image-05 {
+	position: absolute;
+	top: 70px;
+	left: 755px;
+	z-index: -99;
+}
+
+.countdown {
+	display: inline-block;
+	margin-top: 0px; /*20px*/
+}
+.countdown div {
+	width: 74px;
+	height: 74px;
+	border-radius: 100px;
+	float: left;
+	background: #cb3438;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 25px;
+	text-align: center;
+	margin-left: 16px;
+	margin-bottom: 10px;
+}
+.countdown div p {
+	color: #fff;
+	padding-top: 0px;
+	margin-bottom:0;
+}
+.countdown div:first-child{
+	margin-left: 0px;
+}
+.countdown span {
+	display: block;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+.countdown-dark {
+	color: #333;
+}
+.countdown-white {
+	color: #fff;
+}
+
+.countdown-mobile {
+	margin-top: 20px;
+	display: none;
+}
+.countdown-mobile div {
+	width: 74px;
+	height: 74px;
+	border-radius: 100px;
+	float: left;
+	background: #cb3438;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 25px;
+	text-align: center;
+	margin-left: 16px;
+	margin-bottom: 10px;
+}
+.countdown-mobile div p {
+	color: #fff;
+	padding-top: 16px;
+}
+.countdown-mobile div:first-child{
+	margin-left: 0px;
+}
+.countdown-mobile span {
+	display: block;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+.mobile-divider {
+	display: none;
+}
+
+
+.thumbnail_album_name {
+   text-align:left; 
+}  
+
+.thumbnail_album_photo_count {
+    text-align:left; 
+    padding-left: 0px;
+}
+
+@media(max-width:767px) {
+  .main-images .couple img {
+  height:100%;
+  }
+  
+  .countdown-mobile div p {
+	   color: #fff;
+  	padding-top: 0px;
+  	margin-bottom:0;
+  }
+  
+  .countdown-mobile div span {
+	 padding:0px;
+  }
+}
+
+.round-img-banner {
+	border: 10px solid #dbdbdb;
+	border-radius: 50%;
+	margin: 15px auto;
+	-moz-box-shadow: 0 2px 4px rgba(104,104,104,0.8) inset;
+	-webkit-box-shadow: 0 2px 4px rgba(104,104,104,0.8) inset;
+	box-shadow: 0 2px 4px rgba(104,104,104,0.8) inset;
+   
+  height: 180px;
+  overflow: hidden;
+  text-align: center;
+  width: 180px;
+}
+
+.round-img-lgb-banner {
+	border: 10px solid #dbdbdb !important;
+  height:305px;
+  width: 300px;
+  max-width:300px;
+  min-width:300px;
+  
+  overflow: hidden;
+  text-align: center;
+}
+.round-img-banner img{
+  vertical-align: middle;
+}
+   
+* {
+    transition: all 300ms;
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+  
+    
+/*social share button*/
+.menu-item,
+.menu-open-button {
+  background: #e8491d;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  position: absolute;
+  color: #FFFFFF;
+  
+  text-align: center;
+  line-height: 84px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform ease-out 200ms;
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+.menu-open {
+  display: none;
+}
+
+.menuShare {
+  margin: auto;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  width: 100px;
+  height:100px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 26px;
+  z-index: 99;
+}
+
+.menuShare a.menu-item .fa{
+  color: #fff;
+}
+
+.share-icon{
+  color: #fff;
+}
+
+.menu-item:hover {
+  opacity: 1;
+}
+
+.menu-item:nth-child(3) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(4) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(5) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(6) {
+  -webkit-transition-duration: 180ms;
+  transition-duration: 180ms;
+}
+
+.menu-open-button {
+  z-index: 2;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+  -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+.menu-open-button:hover {
+  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+  transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.menu-open:checked ~ .menu-item {
+  -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+  transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(3) {
+  transition-duration: 180ms;
+  -webkit-transition-duration: 180ms;
+  -webkit-transform: translate3d(0.08361px, -84.99997px, 0);
+  transform: translate3d(0.08361px, -84.99997px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(4) {
+  transition-duration: 280ms;
+  -webkit-transition-duration: 280ms;
+  -webkit-transform: translate3d(0.08361px, -174.99997px, 0);
+  transform: translate3d(0.08361px, -174.99997px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(5) {
+  transition-duration: 380ms;
+  -webkit-transition-duration: 380ms;
+  -webkit-transform: translate3d(0.08361px, -262.99997px, 0);
+  transform: translate3d(0.08361px, -262.99997px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(6) {
+  transition-duration: 380ms;
+  -webkit-transition-duration: 380ms;
+  -webkit-transform: translate3d(0.08361px, -350.99997px, 0);
+  transform: translate3d(0.08361px, -350.99997px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(7) {
+  transition-duration: 480ms;
+  -webkit-transition-duration: 480ms;
+  -webkit-transform: translate3d(0.08361px, -440.99997px, 0);
+  transform: translate3d(0.08361px, -440.99997px, 0);
+}
+
+.facebook_share_btn {
+  background-color: #3b5998;
+}
+
+.facebook_share_btn:hover {
+  color: #3b5998;
+  text-shadow: none;
+}
+
+.twitter_share_btn {
+  background-color: #00aced;
+}
+
+.twitter_share_btn:hover {
+  color: #00aced;
+  text-shadow: none;
+}
+
+.google_plus_share_btn {
+  background-color: #dd4b39;
+}
+
+.google_plus_share_btn:hover {
+  color: #dd4b39;
+  text-shadow: none;
+}
+.whatsapp_share_btn {
+  background-color: green;
+}
+
+.whatsapp_share_btn:hover {
+  color: green;
+  text-shadow: none;
+}
+.linkedin_share_btn {
+  background-color: #00aced;
+}
+
+.linkedin_share_btn:hover {
+  color: #00aced;
+  text-shadow: none;
+}
+
+/*end social share button*/
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+.navbar-custom{
+background-color: #151717;
+	color: #FFF;
+	border-radius: 0px;
+	padding: 10px;
+}
+.navbar-custom .navbar-nav>li>a{
+	color: #FFF;font-family: Times new roman;
+	font-size: 21px;margin-left: 13px;
+}
+.navbar-custom .navbar-nav>.active>a{
+	color: #fff;background-color: #df6c43;
+}
+.navbar-custom .navbar-nav>li>a:hover{
+	background-color: #df6c43;
+}
+.navbar-custom .navbar-brand{
+color: #fff;font-size: 27px;margin-left: 15px;
+}
+.navbar-custom .navbar-brand:hover{
+color: #fff;font-size: 27px;
+    }
+.navbar-custom{
+background-color: #151717;
+	color: #FFF;
+	border-radius: 0px;
+	padding: 10px;
+}
+.navbar-custom .navbar-nav>li>a{
+	color: #FFF;
+	font-size: 19px;margin-left: 13px;
+}
+.navbar-custom .navbar-nav>.active>a{
+	color: #fff;background-color: #df6c43;
+}
+.navbar-custom .navbar-nav>li>a:hover{
+	background-color: #df6c43;
+}
+.navbar-custom .navbar-brand{
+color: #fff;font-size: 27px;margin-left: 15px;
+}
+.navbar-custom .navbar-brand:hover{
+color: #fff;font-size: 27px;
+    }
+     
+#container ul1{
+list-style:none;
+}
+#container ul1 li1{
+background-color:cadetblue;
+width:150px;
+text-decoration: none;
+height:50px;
+line-height:50px;
+text-align:center;
+float:left;
+color:white;
+font-size:20px;font-family: Times new roman;
+position:relative;
+}
+#container ul1 li1:hover{
+background-color:#df6c43;
+}
+#container ul1 ul1{
+display:none;
+}
+#container ul1 li1:hover > ul1{
+display:block;
+}
+#container ul1 ul1 ul1{
+margin-left:150px;
+top:0px;
+posiyion:absolute;
+}
+    #container ui1 a {
+        text-decoration: none;
+    }   
+   
+
+
+    
+    
+    </style>
+    </head>
+<body>
+    <!-- Preloader Starts -->
+    
+   
+
+    <nav class="navbar navbar-custom navbar-nav navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-4">
+			<div class="navbar-header">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+</button>
+				<a href="#" class="navbar-brand">Scorpion Informer</a>
+			</div>
+			</div>
+			<div class="col-md-8">
+			<div class="collapse navbar-collapse" id="robust">
+				<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="About-Us.html">About Us</a></li>
+				<li><a href="Contact-Us.html">Contact Us</a> </li>
+                <li><a href="enquiry.html">Enquiry</a> </li>      
+                    <li><div id="container"><ul1><li1> &nbsp;Language<ul1><br>
+                    <a href="index.html"><li1>Kannada</li1></a><br><br>
+                    <a href="english/index.html"><li1>English</li1></a><br><br>
+                    <a href="hindi/index.html"><li1>Hindi</li1></a>
+                    </ul1></li1></ul1></div></li>             
+        
+			</ul>
+			</div>
+			</div>
+		</div>
+		</div>
+	</nav>
+    
+    
+    
+    
+    
+    
+    
+      
+    
+<section id="home">
+<div style="text-align: center;">		
+	<!-- Names -->
+			<div class="names" data-scroll-reveal="" style="-webkit-transform: translatey(0);transform: translatey(0);opacity: 1;-webkit-transition: -webkit-transform 0.66s ease-in-out 0s,  opacity 0.66s ease-in-out 0s;transition: transform 0.66s ease-in-out 0s, opacity 0.66s ease-in-out 0s;-webkit-perspective: 1000;-webkit-backface-visibility: hidden;" data-scroll-reveal-initialized="true">
+                <span style ="color:orange;font-size:50px;">Marriage Invitation </span></div>
+
+    
+			<!-- Wedding Date -->
+			<div class="wedate"><p style="color:#000;font-size:20px;font-family: Times New Roman;">With lots of love and lots of hopes i have started this journey,<br> dreaming about a life with endless love and happiness.</p><i></i> <strong></strong> <i></i> </div>
+			
+    
+    
+    
+    <div class="names" data-scroll-reveal="" style="-webkit-transform: translatey(0);transform: translatey(0);opacity: 1;-webkit-transition: -webkit-transform 0.66s ease-in-out 0s,  opacity 0.66s ease-in-out 0s;transition: transform 0.66s ease-in-out 0s, opacity 0.66s ease-in-out 0s;-webkit-perspective: 1000;-webkit-backface-visibility: hidden;" data-scroll-reveal-initialized="true">
+        <span>Nithin Gowda </span><span style ="color:#000;font-size:40px;">- Weds -</span> <span class="prime-color"> Suraksha </span></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+			<!-- Header Images -->
+			<div class="main-images center-content" data-scroll-reveal="enter bottom, after 0.2s" style="-webkit-transform: translatey(0);transform: translatey(0);opacity: 1;-webkit-transition: -webkit-transform 0.66s ease-in-out 0.2s,  opacity 0.66s ease-in-out 0.2s;transition: transform 0.66s ease-in-out 0.2s, opacity 0.66s ease-in-out 0.2s;-webkit-perspective: 1000;-webkit-backface-visibility: hidden;" data-scroll-reveal-initialized="true">
+  
+				<div class="couple round-img-banner round-img-lgb-banner">
+					<img src="img/IMG-20190510-WA0005a.jpg" style="display:inline;width:131%;height:100%;" alt="">
+				</div>
+
+				<div class="images">
+					<div class="image-01 round-img-banner">
+                        <img src="img/IMG_1518533013964.jpg" style="width:100%;" alt="">
+					</div>
+					<div class="image-02 round-img-banner">
+						<img src="img/IMG_20190412_170459.jpg" style="width:140%;" alt="">
+					</div>
+					<div class="image-04 round-img-banner">
+						<img src="img/IMG-20190510-WA0006.jpg" style="height:100%;" alt="">
+					</div>
+					<div class="image-05 round-img-banner">
+						<img src="img/IMG-20190404-WA0006.jpg              " style="height:100%;" alt="">
+					</div>
+				</div>
+			</div>
+			
+			<!-- Countdown -->
+			<div class="countdown countdown-white" data-countdown="2019/01/23">
+                <div><a href="https://www.facebook.com/nithin.gowda.712?ref=br_rs"><p>
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i></p></a><span></span></div>
+                <div><a href="tel:+918762826199"><p><i class="fa fa-phone" aria-hidden="true"></i></p></a><span>Call</span></div>
+                <div><a href=" https://www.instagram.com/scorpion_informer/"><p>
+                   <i class="fab fa-instagram" aria-hidden="true"></i></p></a><span></span>
+                </div></div>
+			<!-- Countdown Mobile -->
+			<div class="countdown-mobile countdown-white" data-countdown-mobile="2019/01/23"><div><p>
+                <i class="fab fa-facebook-f" aria-hidden="true"></i></p><span></span></div><div><p>
+                <i class="fa fa-phone" aria-hidden="true"></i></p><span>Call</span></div><div><p>
+               <i class="fab fa-twitter" aria-hidden="true"></i></p><span></span></div></div>
+    
+    
+    
+    
+		</div>
+</section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Banner Area Starts -->
+    <section class="banner-area text-center">
+        
+            
+                <div class="col-lg-12">  <a href="index.html" class="template-btn mt-3">HOME</a>
+                     <a href="Gallery.html" class="template-btn mt-3">GALLERY</a>
+                    <a href="About-Us.html" class="template-btn mt-3">ABOUT US</a>
+                     <a href="Contact-Us.html" class="template-btn mt-3">CONTACT US</a>
+                    <a href="enquiry.html" class="template-btn mt-3">ENQUIRY</a>
+                    
+                    <br> <br>
+                    
+                    <h6 style="font-family:Times New Roman;">You create good tomorrow by better today.</h6>
+                    <h1> <span class="prime-color">14 </span>  
+                    <span class="style-change"> - NOV - <span class="prime-color">2019 </span></span></h1>
+                   <p style="font-family:Times New Roman; font-size: 25px;color:#fff;">A sucessful family never sounds better without us both being together, respecting each others feeling, living in ocean of understanding, under the sky of love.</p>
+                </div>
+          
+    </section>
+    <!-- Banner Area End -->
+
+    <!-- Welcome Area Starts -->
+    <section class="welcome-area section-padding2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <div class="welcome-img">
+                        <img src="img/IMG_20190509_134233.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <div class="welcome-text mt-5 mt-md-0">
+                        <h3><span class="style-change">A sucessful marriage requires falling</span>  in love many times with the same person.</h3>
+                        
+                        <p style="color:#000;font-family:Times New Roman;font-size:20px;"></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Welcome Area End -->
+
+    <!-- Food Area starts -->
+    <section class="food-area section-padding">
+        <div class="container">
+            <div class="row">
+               
+                    
+                    <div class="section-top">
+                        <h3><span class="style-change">Forgiveness is the best form of love because it takes a </span> strong person to say sorry and an even stronger person to forgive.</h3>
+                        <p class="pt-3"><p style="color:#000;font-family:Times New Roman;font-size:20px;"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-food">
+                        <div class="food-img">
+                            <img src="img/IMG_20190509_141904.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="food-content">
+                            <div class="d-flex justify-content-between">
+                                <a href="Gallery.html"><h5>Gallery</h5></a>
+
+                                <span class="style-change"> <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                <i class="fa fa-hand-o-right" style="font-size:30px"></i></span>
+                            </div>
+                            <p class="pt-3"><p style="color:#000;font-family:Times New Roman;font-size:20px;">
+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-food mt-5 mt-sm-0">
+                        <div class="food-img">
+                            <img src="img/IMG-20190510-WA0002.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5>Videos</h5>
+                                <span class="style-change"> <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                <i class="fa fa-hand-o-right" style="font-size:30px"></i></span>
+                            </div>
+                            <p class="pt-3"><p style="color:#000;font-family:Times New Roman;font-size:18px;"></p>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-food mt-5 mt-sm-0">
+                        <div class="food-img">
+                            <img src="img/IMG_20190509_134233.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5>The foundation of various works</h5>
+                                <span class="style-change">
+                                   
+                                <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                <i class="fa fa-hand-o-right" style="font-size:30px"></i>
+                                
+                                </span>
+                            </div>
+                            <p class="pt-3"><p style="color:#000;font-family:Times New Roman;font-size:18px;"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    
+                            
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Food Area End -->
+
+    <!-- Reservation Area Starts -->
+    <div class="reservation-area section-padding text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>"If my life was a ship, you would be the anchor that holds me in place and the sails which take me on a beautiful journey, this amazing journey started on 9th may in the name of engagement."</h2>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reservation Area End -->
+    
+    <!-- Deshes Area Starts -->
+    <div class="deshes-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-top2 text-center">
+                        <h3>I will love you until infinity runs out. <span>You are my love, you are my life </span> and you are everything to me.</h3>
+                        <p style="color:#000;font-family:Times New Roman;font-size:20px;"><i></i></p>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-6 align-self-center">
+                    <h1>01.</h1>
+                    <div class="deshes-text">
+                        <h3 style="font-family:Times New Roman;font-size:20px;"><span>Real love is not based on costly gift, world tour, candle light dinner, walks along the beach. </span> In fact it is based on respect, compromise, care, trust, forgiveness and helping each other.</h3>
+                        <p class="pt-3"><p style="color:#000;font-family:Times New Roman;font-size:20px;">
+                            
+                            
+                           </p>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
+                    <img src="img/IMG-20190510-WA0003.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
+                    <img src="img/IMG-20190510-WA0004.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2">
+                    <h1>02.</h1>
+                    <div class="deshes-text">
+                        <a href="table.html"><h3><span>With lots of love and lots of hopes i have started this journey,</span> Dreaming about a life with endless love and happiness.</h3></a>
+                        <p class="pt-3"><p style="color:#000;font-family:Times New Roman;font-size:20px;"></p>
+                       
+                    </div>
+                </div>
+            </div>
+                
+          
+        </div>
+    </div>
+    <!-- Deshes Area End -->
+
+    <!-- Testimonial Area Starts -->
+    <section class="testimonial-area section-padding4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-top2 text-center">
+                        <h3>Comment<span> details </span></h3>
+                        <p style="font-family: Times New Roman;font-size: 20px;">Comments Display</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testimonial-slider owl-carousel">
+                        <div class="single-slide d-sm-flex">
+                            <div class="customer-img mr-4 mb-4 mb-sm-0">
+                                <img src="img/IMG-20190510-WA0076.jpg" alt="">
+                            </div>
+                            <div class="customer-text">
+                                <h5>Visiting</h5>
+                                <span><i>Visiting details</i></span>
+                                <p class="pt-3"><p style="color:#000;font-size:15px;">hghfhfy bjhg uguiui u uyuy uuyu iutu uti  tuu uti tui ui t utu u tutyr tyrytuyriyfyrtryugyyyyyyyyyyyyyyyyyyyyyy<br>yyyyyyyyyyrrrrrrrrrrrrrrrrrrgv       ytttttuu.</p>
+                            </div>
+                        </div>
+                        <div class="single-slide d-sm-flex">
+                            <div class="customer-img mr-4 mb-4 mb-sm-0">
+                                <img src="img/IMG-20190510-WA0076.jpg" alt="">
+                            </div>
+                            <div class="customer-text">
+                                <h5>Visiting</h5>
+                                <span><i> details</i></span>
+                                <p class="pt-3"><p style="color:#000;font-size:15px;">hghfhfy bjhg uguiui u uyuy uuyu iutu uti  tuu uti tui ui t utu u tutyr tyrytuyriyfyrtryugyyyyyyyyyyyyyyyyyyyyyyyyy<br>yyyyyyyrrrrrrrrrrrrrrrrrrgv       ytttttuu..</p>
+                            </div>
+                        </div>
+                        <div class="single-slide d-sm-flex">
+                            <div class="customer-img mr-4 mb-4 mb-sm-0">
+                                <img src="img/IMG-20190510-WA0076.jpg" alt="">
+                            </div>
+                            <div class="customer-text">
+                                <h5>Visiting</h5>
+                                <span><i>Visiting details</i></span>
+                                <p class="pt-3"><p style="color:#000;font-size:15px;">hghfhfy bjhg uguiui u uyuy uuyu iutu uti  tuu uti tui ui t utu u tutyr tyrytuyriyfyrtryugyyyyyyyyyyyyyyyyyyyyy<br>yyyyyyyyyyyrrrrrrrrrrrrrrrrrrgv       ytttttuu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Area End -->
+
+    
+
+    <!-- Table Area Starts -->
+    <section class="table-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-top2 text-center">
+                        <h3 style="font-size:20px;"> <span> "If my life was a ship, you would be the anchor that holds me in place and the sails which take me on a beautiful journey, this amazing journey started on 9th may in the name of engagement.".</span><br></h3>
+                    </div>
+                </div>
+            </div>
+          
+               
+                   
+                     
+                    
+                    
+                </div>
+          
+        
+    </section>
+    <!-- Table Area End -->
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Map Area Starts -->
+   <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://www.google.co.in/maps/dir/13.3489576,75.4650299/Balehonnur,+Karnataka+577112/@13.3494569,75.4615882,15.78z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bbb3a4ca5505a19:0x21e24441bc114119!2m2!1d75.4650595!2d13.3490068" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.org">html5 embed code for google map locations</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+    <!-- Map Area End -->
+
+
+    <!-- Contact Form Starts -->
+    <section class="contact-form section-padding3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="info-text">
+                            <h5>Okkaligara Hostel, Balehonur,<br><br> Chickamagalur ||D|| </h5>
+                            <p>Santa monica bullevard</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h5>00 (440) 9865 562</h5>
+                            <p>Mon to Fri 9am to 6 pm</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="info-text">
+                            <h5>support@colorlib.com</h5>
+                            <p>Send us your query anytime!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <form action="#">
+                        <div class="left">
+                            <input type="text" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" required>
+                            <input type="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" required>
+                            <input type="text" placeholder="Enter subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" required>
+                        </div>
+                        <div class="right">
+                            <textarea name="message" cols="20" rows="7"  placeholder="Enter Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" required></textarea>
+                        </div>
+                        <button type="submit" class="template-btn">subscribe now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form End -->
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	<nav class="menuShare">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open"><i class="fa fa-share-alt share-icon"></i></label>
+    <a class="menu-item twitter_share_btn" href="http://twitter.com/share?url=https://scorpioninformer123.github.io/T-D-R/">
+                    <i class="fab fa-twitter" aria-hidden="true"></i></a>
+    <a class="menu-item google_plus_share_btn" href="https://plus.google.com/share?url=https://scorpioninformer123.github.io/T-D-R/">
+                    <i class="fab fa-google" aria-hidden="true"></i></a>
+    <a class="menu-item whatsapp_share_btn" href="whatsapp://send?text=https://scorpioninformer123.github.io/T-D-R/">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+    <a class="menu-item facebook_share_btn" href="http://www.facebook.com/sharer.php?u=https://scorpioninformer123.github.io/T-D-R/">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+    <a class="menu-item linkedin_share_btn" href="http://www.linkedin.com/shareArticle?mini=true&url=https://scorpioninformer123.github.io/T-D-R/">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i></a>
+	</nav>
+   
+  <script src='js/menuShare.js'></script>
+
+  
+
+    <!-- Footer Area Starts -->
+    <footer class="footer-area">
+         
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                        <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed By : <a href="https://www.facebook.com/nithin.gowda.712?ref=br_rs">Nithin Gowda </a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="social-icons">
+                            <ul>
+                                <li class="no-margin">Follow Us</li>
+                                <li><a href="https://www.facebook.com/nithin.gowda.712?ref=br_rs"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/scorpioninform1"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://plus.google.com/116983735841213089569"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="https://www.instagram.com/scorpion_informer/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+
+    <!-- Javascript -->
+    <script src="assets/index/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="assets/index/js/vendor/bootstrap-4.1.3.min.js"></script>
+    <script src="assets/index/js/vendor/wow.min.js"></script>
+    <script src="assets/index/js/vendor/owl-carousel.min.js"></script>
+    <script src="assets/index/js/vendor/jquery.datetimepicker.full.min.js"></script>
+    <script src="assets/index/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="assets/index/js/main.js"></script>
+</body>
+</html>
